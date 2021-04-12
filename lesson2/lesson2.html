@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2 | Forms & CSS</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+    <i class="fas fa-copyright"></i>
+    <i class="fas fa-users"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fas fa-trash-alt"></i>
+
+    <!-- container (fixed), container-fluid -->
+    <!--  -->
+
+    <div class="container">
+        <h1>Forms & Bootstrap</h1>
+
+        <!-- form attribute - action, method (POST, GET), id, class, -->
+        <!-- input elements - text, email, password, textarea, select, checkbox -->
+
+        
+        <form action="" method="POST">
+            <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" name="name" placeholder="Enter Your Name">
+            </div>
+            <div>
+                <label for="email" >Email</label>
+                <input type="email" name="email" id="">
+            </div>
+            <br>
+            <div>
+                <label for="password" >Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            
+            <div>
+                <label for="city">Your State</label>
+                <select name="city" id="city">
+                    <option value="1">Seattle</option>
+                    <option value="2">Tacoma</option>
+                    <option value="3">Bellingham</option>
+                </select>
+            </div>
+            
+            <div class="form-check">
+                <label for="conditions" class="form-check-label">Agree to terms and conditions</label>
+                <input type="radio" class="form-check-input" name="conditions" id="conditions">
+            </div>
+            
+            <div>
+                <label for="remember">Remember Password</label>
+                <input type="checkbox" name="remember" id="remember">
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <!-- context colors - success, primary, warning, danger -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

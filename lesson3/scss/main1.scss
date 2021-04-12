@@ -1,0 +1,79 @@
+/* 
+Stylesheet for CS202
+* version:2.0
+* last Modified: 5.2.2021
+* author: lindsey@lindseyha.com
+*website: lesson 3
+*/
+
+/* 
+1. body
+2. header
+3. nav
+4. main
+5. footer
+*/
+
+//import
+
+@import "..node/node_modules/bootstrap/scss/bootstrap.scss";
+
+//import a partial
+
+@import "button";
+
+//scss variables
+$primary: #05a081;
+$second: #fffef0
+$text-color: #fff;
+$margin: 22px;
+
+body{
+    background-color: $second !important;
+}
+
+h2, h3{
+    color: $primary;
+    margin: $margin/2;
+}
+
+p{
+    //font
+    font-family: Arial;
+    font-style: regular;
+    font-weight: bold;
+    line-height: 200px;
+    text-transform: uppercase;
+
+    //font shorthand
+    //font: font-style font-variant font-weight fon-size/line-height font-family;
+
+    //font: regular bold 18px/200% Arial;
+    
+    //nesting properties
+    //font: {
+    //    style: regular;
+    //    weight: bold
+    //    size: 18px;
+    //    family: Arial;
+    //}
+    //text:{
+    //    transform: uppercase;
+    //}
+}
+
+//nesting elements
+nav{
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: $primary;
+        display: inline-block;
+        padding: 1em 2em;
+
+        font{
+            weight: bold;
+            size: 1.1rem;
+        }
+    }
+}
