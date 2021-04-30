@@ -1,0 +1,38 @@
+/*
+Style Sheet for Justice Banson
+* version: 4.2
+* last modified: 7.8.2020
+* author: Justice Banson
+* email: justice@justicebanson.com;
+* website: Lesson 6.
+ */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+//variables
+
+$color-1: #22bbd4;
+$color-2: #2c6e78;
+$text-color: #fff;
+
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito';
+}
+.box {
+    font-weight: bold;
+    padding: 0.8em;
+    color: #fff;
+    border: 1px solid $text-color;
+}
+.color-1 {
+    background: $color-1;
+}
+.color-2 {
+    background: $color-2;
+}
